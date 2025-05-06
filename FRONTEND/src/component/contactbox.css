@@ -1,0 +1,60 @@
+div{
+    font-family: 'Times New Roman', Times, serif;
+}
+.row label{
+    color: black;
+} 
+.form-section {
+  height: 480px;
+   
+    padding: 30px;
+    /* background-color: rgb(244, 245, 239); */
+    /* background-image: linear-gradient(90deg, #719ed1 0%, #aecbe4 35%, #4881fa 100%); */
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    /* background-image: linear-gradient(90deg, #48e3ff 0%, #cbcbff 35%, #3567d5 100%); */
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .form-section h2 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .form-section h2 span {
+    color: #00b2a9;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    transition: 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  .form-control {
+    border-radius: 10px;
+  }
+
+  
+  input{
+    width: 350px;
+  }
+  .banner8{
+    background-image: url('https://images.unsplash.com/photo-1587560699334-cc4ff634909a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+   
+     background-color: rgb(244, 245, 239);
+     color: black;
+     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    
+    
+  }
+  
+ 

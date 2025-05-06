@@ -1,0 +1,15 @@
+nav{
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+}
+a:hover{
+    color: rgb(95, 158, 236);
+    font-size:18px;
+    text-decoration: underline;
+}
+li .home{
+    display: none;
+}
+li .home:hover{
+    visibility: visible;
+}

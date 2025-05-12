@@ -1,7 +1,5 @@
 import React, { useRef, useState } from 'react'
-import 'intl-tel-input/build/css/intlTelInput.css';
-import intlTelInput from 'intl-tel-input';
-import './orderbox.css'
+import './Orderbox.css'
 import { useForm } from "react-hook-form"
 import axios from "axios";
 const Orderbox = () => {

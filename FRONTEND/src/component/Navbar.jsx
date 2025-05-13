@@ -12,41 +12,50 @@ const Navbar = () => {
   </> )
   return (
     <>
-    <nav className=' bg-black text-white md:flex-row md:flex flex-col justify-center md:justify-around gap-10 md:gap-0 p-4 h-16 md:h-14 opacity-1 fixed w-[750px] md:w-[1550px] opacity-100 m-0
-    '>
-      <div className="navbar-start h-[10px] m-0 p-0 ">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden ">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5 "
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h8m-8 6h16" />
-        </svg>
+ <nav className="fixed top-0 left-0 w-full bg-black text-white shadow-md z-50">
+  <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-2">
+    {/* Logo & Mobile Menu */}
+    <div className="flex items-center">
+      {/* Mobile Dropdown */}
+      <div className="dropdown lg:hidden">
+        <button tabIndex={0} className="btn btn-ghost p-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-7 w-7"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <ul
+          tabIndex={0}
+          className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-white text-black rounded-box w-52"
+        >
+          {navItems}
+        </ul>
       </div>
-      <ul
-        tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+
+      {/* Logo */}
+      <img
+        src="/logo.png"
+        alt="Logo"
+        className="h-12 w-auto ml-2 sm:h-14 md:h-16 lg:h-20 object-contain"
+      />
+    </div>
+
+    {/* Desktop Menu */}
+    <div className="hidden lg:flex">
+      <ul className="menu menu-horizontal px-1 space-x-6 text-lg font-semibold">
         {navItems}
       </ul>
     </div>
-    {/* <img src="" alt="" /> */}
-    <img src="/logo.png" alt="" className='md:h-[140px] h-[75px] ' id="logo"/>
   </div>
-  <div className="navbar-end space-x-3 ">
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1  text-xl  ">
-        {navItems}
-        </ul>
-  </div>
-  </div>
-  </nav>
+</nav>
+
+
+
     </>
   )
 }

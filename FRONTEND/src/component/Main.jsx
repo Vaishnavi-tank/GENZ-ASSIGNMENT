@@ -42,91 +42,182 @@ const Main = () => {
   return (
     <>
     {/* main page poster */}
-      <div className='div1'>
-        <div className=' md:w-full w-[725px] flex text-white flex-col text-2xl justify-center align-center relative  h-[700px] overflow-hidden '>
-           {/* Background Video */}
-        <video
-        src="main.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      ></video>
-          <div className='mt-4 text-center absolute inset-0 flex flex-col justify-center'>
-            <h1 className='text-[100px] ' >GenZ Assignments</h1>
-            <h2 className=' text-4xl'>
-              We Provide Best Offers
-            </h2>
-            <div className=" p-6">
-              <Link to="/contact"   className='btn btn-neutral btn-outline bg-white/60 text-white text-xl rounded-xl cursor-pointer p-3 hover:text-xl hover:no-underline hover:bg-black/80'>Connect with Us</Link>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div className=" bg-base-200 md:w-full w-[725px] md:h-[320px] h-[850px]">
-        <div className=' md:w-full w-[725px] md:flex justify-evenly align-center text-center items-center '>
-          <div className='md:w-1/3 bg-no-repeat bg-cover rounded-md  border-blue-500 text-xl  h-[250px]  text-white m-4 pt-20' data-aos="fade-up" data-aos-delay="100" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1633458138940-ddf4c64604c7?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')", }}>
-            <h1 className='font-semibold pb-3 text-3xl ' style={{ textShadow: "2px 2px 2px black" }}>150000+ </h1>
-            <h2 className='font-bold'>Projects</h2> 
-          </div>
-          <div className='md:w-1/3 bg-no-repeat bg-cover rounded-md h-[250px] backdrop-blur-2xl  text-xl  text-white m-5 p-20' data-aos="fade-up" data-aos-delay="200" style={{ backgroundImage: "url('/bg-4.jpg", }}>
-            <h1 className='font-semibold pb-3 text-3xl text-white' style={{ textShadow: "2px 2px 2px black" }}>30000+ </h1>
-            <h2 className='font-bold'>Clients</h2>
-          </div>
-          <div className='md:w-1/3 bg-no-repeat bg-cover rounded-md h-[250px]  text-xl  text-white m-5 p-20' data-aos="fade-up" data-aos-delay="300" style={{ backgroundImage: "url('https://cdn.pixabay.com/photo/2016/11/21/12/16/computer-1844996_1280.jpg", }}>
-            <h1 className='font-semibold pb-3 text-3xl' style={{ textShadow: "2px 2px 2px black" }} >97% </h1>
-            <h2 className='font-bold'>Passing rate</h2>
-          </div>
-        </div>
-      </div>
-      <div className="div3 flex md:w-full w-[725px] bg-base-100 text-white gap-24 h-[600px] md:h-[380px] justify-center items-center " >
-        <div className='part1 p-5 w-1/2 ml-10' data-aos="fade-up-right" >
-          <h1 className='text-4xl mt-3 text-blue-300 pb-2'>What We do</h1>
-          <h2 className='text-2xl font-bold'>All types of Assignments</h2>
-          <p className='text-xl md:text-lg'>We deals with all type of assignments with grate  results on the basis of above  facts.</p>
-          <h2 className='text-2xl font-bold'>Thesis/Dissertation</h2>
-          <p className='text-xl md:text-lg'>On the basis of the aforementioned facts, we handle all types of thesis and dissertation <br />with excellent outcomes.</p>
-          <h2 className='text-2xl font-bold' >The Best Assignment Writers Get Outstanding Results</h2>
-        </div>
-        <div className='part2 w-1/2'>
-          <img src="/bg-1.png" alt="" className='h-[300px] md:h-[450px] w-[450px] md:w-[500px]  md:rounded-xl rounded-full mt-5 ' data-aos="zoom-out-right" />
-        </div>
-      </div>
-      <div className="div4 flex md:w-full w-[725px] bg-base-100 text-white gap-24 h-[380px] justify-center items-center" >
-        <div className='part1 w-1/2 md:ml-24'  >
-          <img src="/bg-2.png" alt="" className='h-[300px] md:h-[400px] w-[450px] md:w-[550px] md:rounded-xl rounded-full' data-aos="zoom-out-left" />
-        </div>
-        <div className='part2 p-5 w-1/2 ' data-aos="fade-up-left">
-          <h1 className="text-4xl text-blue-300 pb-2" >We Guarantee three things: </h1>
-          <h1 className='text-xl'>1. Passing Marks</h1>
-          <h1 className='text-xl'>2. Best price in the industry</h1>
-          <h1 className='text-xl'>3. Best Support From our Executives. </h1>
-        </div>
-      </div>
-      <div className="div5  md:w-full w-[725px] md:h-[600px] h-[1000px] bg-base-100"  >
-        <h2 className='text-6xl text-white text-center  p-4 ' >Why GenZ ?</h2>
-        <div className="genz md:flex text-white" data-aos="flip-right" >
+    <div className="relative w-full h-screen overflow-hidden text-white">
+  {/* Background Video */}
+  <video
+    src="main.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover z-0"
+  ></video>
 
-          <div className="md:w-1/4  one   p-4 m-4 text-justify " data-aos="flip-right">
-            <h1 className='mb-4 font-bold'>Professional-Experts</h1>
-            <p className='text-lg'>Professional experts   our staff have years of experience and are experts in their specialties. They are highly qualified and experienced in offering our clients excellent solutions and direction.</p>
-          </div>
-          <div className=" md:w-1/4 two backdrop-blur-md   p-4 m-4 text-justify " data-aos="flip-right">
-            <h1 className='mb-4 font-bold'>Complete Privacy</h1>
-            <p className='text-lg'>Our top priority is the security of your data. To stop your data from being misused or leaked, we employ cutting-edge security procedures. We promise that all of your transactions will be secure and private. </p>
-          </div>
-          <div className="md:w-1/4 three backdrop-blur-md  p-4 m-4 text-justify" data-aos="flip-right">
-            <h1 className='mb-4 font-bold'>Quality Assurance</h1>
-            <p className='text-lg'>Quality assurance is an essential process implemented within organizations to ensure that products, services, and processes consistently meet or exceed predetermined quality standards. It encompasses various activities and strategies aimed at preventing defects, identifying and resolving issues.</p>
-          </div>
-          <div className=" md:w-1/4 four backdrop-blur-md p-4 m-4 text-justify" data-aos="flip-right">
-            <h1 className='mb-4 font-bold'>Timely Delivery</h1>
-            <p className='text-lg'>We are able to always keep you informed and deliver your job on time thanks to our account-based tracking system. For many years, our experts have been honing their abilities to provide superior support with homework assignments.  </p>
-          </div>
-        </div>
-      </div>
-      <div className='bg-base-100 text-white p-10 md:w-full w-[725px]' >
+  {/* Overlay Content */}
+  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 bg-black/40">
+    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">GenZ Assignments</h1>
+    <h2 className="text-xl md:text-3xl mb-6">We Provide Best Offers</h2>
+    <Link
+      to="/contact"
+      className="btn btn-neutral btn-outline bg-white/60 text-white text-lg md:text-xl rounded-xl px-6 py-3 hover:bg-black/80"
+    >
+      Connect with Us
+    </Link>
+  </div>
+</div>
+
+{/*  what we do */}
+<div className="div3 w-full bg-base-100 text-white py-8 px-4">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    {/* Text Content */}
+    <div className="md:w-1/2 w-full" data-aos="fade-up-right">
+      <h1 className="text-3xl md:text-4xl text-blue-300 pb-3 font-bold">What We Do</h1>
+
+      <h2 className="text-2xl font-semibold mb-1">All Types of Assignments</h2>
+      <p className="text-lg text-white/90 mb-4">
+        We deal with all types of assignments and deliver great results based on proven facts.
+      </p>
+
+      <h2 className="text-2xl font-semibold mb-1">Thesis/Dissertation</h2>
+      <p className="text-lg text-white/90 mb-4">
+        On the basis of the aforementioned facts, we handle all types of thesis and dissertation with excellent outcomes.
+      </p>
+
+      <h2 className="text-2xl font-semibold">
+        The Best Assignment Writers Get Outstanding Results
+      </h2>
+    </div>
+
+    {/* Image */}
+    <div className="md:w-1/2 w-full flex justify-center" data-aos="zoom-out-right">
+      <img
+        src="/bg-1.png"
+        alt="What We Do"
+        className="w-[250px] h-[250px] md:w-[400px] md:h-[400px] object-cover  transition-all duration-300"
+      />
+    </div>
+  </div>
+</div>
+
+{/* Stats Section */}
+<div className="bg-base-200 w-full py-12 px-4">
+
+  <div className="max-w-6xl mx-auto grid gap-6 md:grid-cols-3">
+    {/* Box 1 */}
+    <div
+      className="rounded-md bg-cover bg-no-repeat h-[250px] text-white flex flex-col justify-center items-center text-xl"
+      data-aos="fade-up"
+      data-aos-delay="100"
+      style={{
+        backgroundImage: `url('https://images.unsplash.com/photo-1633458138940-ddf4c64604c7?q=80&w=1976&auto=format&fit=crop')`,
+      }}
+    >
+      <h1 className="font-semibold text-3xl mb-2" style={{ textShadow: "2px 2px 2px black" }}>150000+</h1>
+      <h2 className="font-bold">Projects</h2>
+    </div>
+
+    {/* Box 2 */}
+    <div
+      className="rounded-md bg-cover bg-no-repeat h-[250px] text-white flex flex-col justify-center items-center text-xl"
+      data-aos="fade-up"
+      data-aos-delay="200"
+      style={{
+        backgroundImage: `url('/bg-4.jpg')`,
+      }}
+    >
+      <h1 className="font-semibold text-3xl mb-2" style={{ textShadow: "2px 2px 2px black" }}>30000+</h1>
+      <h2 className="font-bold">Clients</h2>
+    </div>
+
+    {/* Box 3 */}
+    <div
+      className="rounded-md bg-cover bg-no-repeat h-[250px] text-white flex flex-col justify-center items-center text-xl"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      style={{
+        backgroundImage: `url('https://cdn.pixabay.com/photo/2016/11/21/12/16/computer-1844996_1280.jpg')`,
+      }}
+    >
+      <h1 className="font-semibold text-3xl mb-2" style={{ textShadow: "2px 2px 2px black" }}>97%</h1>
+      <h2 className="font-bold">Passing Rate</h2>
+    </div>
+  </div>
+</div>
+
+  
+  {/* 3 things guaranteed */}
+  <div className="div4 w-full bg-base-100 text-white py-10 px-4">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    
+    {/* Left Image */}
+    <div className="w-full md:w-1/2 flex justify-center md:justify-start" data-aos="zoom-out-left">
+      <img
+        src="/bg-2.png"
+        alt="Guarantee"
+        className="w-[250px] h-[250px] md:w-[450px] md:h-[350px] object-cover  md:rounded-xl"
+      />
+    </div>
+
+    {/* Right Text */}
+    <div className="w-full md:w-1/2" data-aos="fade-up-left">
+      <h1 className="text-3xl md:text-4xl text-blue-300 font-bold pb-4">
+        We Guarantee Three Things:
+      </h1>
+      <ul className="space-y-3 text-lg md:text-xl list-decimal list-inside">
+        <li>Passing Marks</li>
+        <li>Best Price in the Industry</li>
+        <li>Best Support from Our Executives</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+{/* Why Genz */}
+<div className="div5 w-full bg-base-100 py-10 px-4">
+  <h2 className="text-4xl md:text-6xl text-white text-center mb-8">Why GenZ?</h2>
+
+  <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-white" data-aos="flip-right">
+
+    {/* Card 1 */}
+    <div className="one backdrop-blur-md p-6 rounded-xl shadow-md bg-white/10" data-aos="flip-right">
+      <h3 className="text-2xl font-bold mb-3">Professional Experts</h3>
+      <p className="text-base md:text-lg text-justify">
+        Our staff have years of experience and are experts in their specialties. They provide clients with top-quality solutions and professional guidance.
+      </p>
+    </div>
+
+    {/* Card 2 */}
+    <div className="two backdrop-blur-md p-6 rounded-xl shadow-md bg-white/10" data-aos="flip-right">
+      <h3 className="text-2xl font-bold mb-3">Complete Privacy</h3>
+      <p className="text-base md:text-lg text-justify">
+        Your data's security is our top priority. We use advanced protocols to prevent misuse or leaks and guarantee secure, private transactions.
+      </p>
+    </div>
+
+    {/* Card 3 */}
+    <div className="three backdrop-blur-md p-6 rounded-xl shadow-md bg-white/10" data-aos="flip-right">
+      <h3 className="text-2xl font-bold mb-3">Quality Assurance</h3>
+      <p className="text-base md:text-lg text-justify">
+        Our QA process ensures all services meet the highest standards. We prevent defects and resolve issues through consistent strategies.
+      </p>
+    </div>
+
+    {/* Card 4 */}
+    <div className="four backdrop-blur-md p-6 rounded-xl shadow-md bg-white/10" data-aos="flip-right">
+      <h3 className="text-2xl font-bold mb-3">Timely Delivery</h3>
+      <p className="text-base md:text-lg text-justify">
+        With our tracking system, we keep you updated and deliver on time. Our experienced experts ensure efficient and prompt support.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+{/* goals */}
+
+{/* <div className='bg-base-100 text-white p-10 md:w-full w-[725px]' >
         <div className='text-center '>
           <h1 className='text-5xl p-5' data-aos="fade-up">Goals</h1>
           <p className='text-xl p-3'>The company has achieved great success in the sector of content writing and is having customers from all over the globe. The company is having a great customer response for its work and the value it is delivering to its customers. The company has already established itself globally and still growing its branches in other countries. The services company is providing currently are:</p>
@@ -160,7 +251,47 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <div className='bg-base-100 md:w-full w-[725px] '>
+        </div> */}
+<div className='bg-base-100 text-white p-6 md:p-10 w-full'>
+  <div className='text-center'>
+    <h1 className='text-4xl md:text-5xl p-4' data-aos="fade-up">Goals</h1>
+    <p className='text-base md:text-xl px-2 md:px-10 pb-6'>
+      The company has achieved great success in the sector of content writing and is having customers from all over the globe.
+      The company is having a great customer response for its work and the value it is delivering to its customers. 
+      The company has already established itself globally and still growing its branches in other countries. 
+      The services company is providing currently are:
+    </p>
+  </div>
+
+  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 md:px-16'>
+    {[
+      { icon: '👨🏻‍💻', label: 'Technology', delay: 100 },
+      { icon: '📚', label: 'Thesis', delay: 200 },
+      { icon: '</>', label: 'Web Development', delay: 300 },
+      { icon: '📈', label: 'Finance', delay: 400 },
+      { icon: '📝', label: 'Accounting', delay: 100 },
+      { icon: '📊', label: 'Economics', delay: 200 },
+      { icon: '💱', label: 'Marketing', delay: 300 },
+      { icon: '✍', label: 'Content Creation', delay: 400 }
+    ].map((item, index) => (
+      <div
+        key={index}
+        className='text-4xl md:text-5xl flex flex-col items-center justify-center shadow-lg rounded-lg py-6 bg-opacity-10'
+        data-aos="fade-up"
+        data-aos-delay={item.delay}
+      >
+        <div>{item.icon}</div>
+        <h2 className='text-2xl md:text-3xl font-bold mt-2'>{item.label}</h2>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+{/* Projects */}
+
+
+        {/* <div className='bg-base-100 md:w-full w-[725px] '>
           <h1 className='text-center text-4xl p-5 font-bold  text-white' id='name' data-aos="fade-in-left">Projects </h1>
           <div className="slider-container font-semibold md:mt-8">
             <Slider {...settings}>
@@ -193,66 +324,200 @@ const Main = () => {
               </div>
             </Slider>
           </div>
-        </div>
+        </div> */}
+        <div className='bg-base-100 w-full px-4 md:px-10 py-6'>
+  <h1 className='text-center text-3xl md:text-4xl p-5 font-bold text-white' id='name' data-aos="fade-in-left">
+    Projects
+  </h1>
+
+  <div className="slider-container font-semibold mt-6 md:mt-10">
+    <Slider {...settings}>
+      <div className="assignment bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-5 flex items-center justify-center text-center">
+        <h1 className='text-xl md:text-2xl text-white'>Assignments <br /> Quiz</h1>
       </div>
+
+      <div className="finan bg-no-repeat bg-cover h-[200px]  md:h-[250px] md:w-full sm:w-[300px] md:p-4 p-2 flex items-center justify-center text-center">
+        <h1 className='text-xl md:text-2xl text-white '>
+          Finance, <br />
+          Accounting, <br />
+          Economics<br />
+          Marketing
+        </h1>
+      </div>
+
+      <div className="chem bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
+        <h1 className='text-xl md:text-2xl text-white'>
+          Biology+<br />
+          Chemistry+<br />
+          Physics
+        </h1>
+      </div>
+
+      <div className="tech bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
+        <h1 className='text-xl md:text-2xl text-white'>Technology</h1>
+      </div>
+
+      <div className="law bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
+        <h1 className='text-xl md:text-2xl text-white'>Law</h1>
+      </div>
+
+      <div className="bM bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
+        <h1 className='text-xl md:text-2xl text-white'>Business and Management</h1>
+      </div>
+
+      <div className="hN bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
+        <h1 className='text-xl md:text-2xl text-white'>Health & Nursing</h1>
+      </div>
+
+      <div className="cN bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
+        <h1 className='text-xl md:text-2xl text-white'>Cybersecurity & Networking</h1>
+      </div>
+
+      <div className="dA bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
+        <h1 className='text-xl md:text-2xl text-white'>Data & Analytics</h1>
+      </div>
+    </Slider>
+  </div>
+</div>
+
+     
       {/* Popup */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 overflow-y-auto pt-44">
-          <div className="bg-black/60 p-8 rounded-lg shadow-md w-[750px]  relative   ">
+  <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 overflow-y-auto md:pt-28 pt-36">
+    <div className="bg-black/60 p-6 rounded-lg shadow-md w-full max-w-3xl mx-8  relative">
+      <button
+        onClick={toggleForm}
+        className="absolute top-2 right-2 text-3xl font-bold text-white hover:text-red-500 bg-transparent border-none"
+        id="formpopup"
+      >
+        ×
+      </button>
+
+      <h2 className="text-3xl font-bold mb-6 text-blue-500 text-center">Order Form</h2>
+
+      <form
+        action="https://formspree.io/f/myzwedbd"
+        method="post"
+        className="space-y-5 md:h-screen"
+      >
+        <div className="space-y-4 px-4">
+          {/* Name */}
+          <div>
+            <label className="block text-white">Name</label>
+            <input
+              type="text"
+              placeholder="Full name"
+              className="w-full px-4 py-2 rounded"
+              {...register("fullname", { required: true })}
+            />
+            {errors.fullname && (
+              <span className="text-sm text-red-500">Name is required!</span>
+            )}
+          </div>
+
+          {/* Assignment */}
+          <div>
+            <label className="block text-white">Assignment</label>
+            <input
+              type="text"
+              placeholder="Assignment"
+              className="w-full px-4 py-2 rounded"
+              {...register("assignment", { required: true })}
+            />
+            {errors.assignment && (
+              <span className="text-sm text-red-500">This field is required!</span>
+            )}
+          </div>
+
+          {/* Word count */}
+          <div>
+            <label className="block text-white">Word count</label>
+            <input
+              type="number"
+              placeholder="No. of words"
+              className="w-full px-4 py-2 rounded"
+              {...register("number", { required: true })}
+            />
+          </div>
+
+          {/* Deadline */}
+          <div>
+            <label className="block text-white">Deadline</label>
+            <input
+              type="date"
+              className="w-full px-4 py-2 rounded"
+              {...register("deadline", { required: true })}
+            />
+            {errors.deadline && (
+              <span className="text-sm text-red-500">This field is required!</span>
+            )}
+          </div>
+
+          {/* Email */}
+          <div>
+            <label className="block text-white">Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              className="w-full px-4 py-2 rounded"
+              {...register("email", {
+                required: "Email is required",
+                pattern: {
+                  value: /^([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/,
+                  message: "Invalid email address",
+                },
+              })}
+            />
+            {errors.email && (
+              <span className="text-sm text-red-500">{errors.email.message}</span>
+            )}
+          </div>
+
+          {/* Phone number */}
+          <div>
+            <label className="block text-white">Phone number</label>
+            <input
+              type="tel"
+              placeholder="Enter mobile number"
+              className="w-full px-4 py-2 rounded"
+              {...register("phone", {
+                required: "Phone number is required!",
+                maxLength: {
+                  value: 10,
+                  message: "Number must be 10 digits",
+                },
+              })}
+            />
+            {errors.phone && (
+              <span className="text-sm text-red-500">{errors.phone.message}</span>
+            )}
+          </div>
+
+          {/* Comments */}
+          <div>
+            <textarea
+              className="w-full px-4 py-2 rounded mt-2"
+              placeholder="Write your comments"
+              rows={4}
+            ></textarea>
+          </div>
+
+          {/* Submit button */}
+          <div className="text-center mt-4">
             <button
-              onClick={toggleForm}
-              className="absolute top-1 right-2 text-4xl font-bold text-white hover:text-red-500 bg-transparent w-20 border-none"
-            id='formpopup'>
-              ×
+              type="submit"
+              disabled={ordered}
+              className="px-6 py-2 bg-black text-white font-bold rounded hover:bg-blue-500"
+            >
+              {ordered ? "Ordered ✔" : "Order Now"}
             </button>
-            <h2 className="text-4xl font-bold mb-4 text-blue-500 text-center">Oder Form</h2>
-            <form action="https://formspree.io/f/myzwedbd"  method='post' className=' z-50 '>
-            <div className='md:w-[600px] md:p-5 p-[59px] text-center'>
-              <div className=" md:flex-col grid justify-between  md:p-0 p-2">
-                <label htmlFor="" className=' '>Name  </label>
-                <input type="text" className="md:w-[550px] mx-10" placeholder="Full name"
-                  {...register("fullname", { required: true })} />
-                {errors.fullname && <span className='text-sm text-red-500'>Name is required !</span>}
-              </div>
-              <div className='md:flex-col grid justify-between md:p-0 p-2'>
-                <label htmlFor="" className=' '>Assignment  </label>
-                <input type="text" placeholder='Assignment' className="md:w-[550px] mx-10 "
-                 {...register("assignment", { required: true })} />
-                 {errors.deadline && <span className='text-sm text-red-500'>This field is required !</span>}
-              </div>
-              <div className='md:flex-col grid  justify-between md:p-0 p-2'>
-                <label htmlFor="" className='mr-4'>Word count  </label>
-                <input type="number" placeholder='No. of words' className="md:w-[550px] mx-10 "
-                 {...register("number", { required: true })} />
-              </div>
-              <div className='md:flex-col grid  justify-between md:p-0 p-2'>
-                <label htmlFor="" className='mr-10'>Deadline  </label>
-                <input type="date" placeholder='Deadline' className="md:w-[550px] mx-10"
-                  {...register("deadline", { required: true })} />
-                {errors.deadline && <span className='text-sm text-red-500'>This field is required !</span>}
-              </div>
-              <div className='md:flex-col grid  justify-between md:p-0 p-2'>
-                <label htmlFor="" className='mr-16'>Email  </label>
-                <input type="email" placeholder='Email' className="md:w-[550px] mx-10"
-                  {...register("email", { required: 'Email is required', pattern: { value: /^([a-zA-Z0-9._%+-]+@[a-zA-Z0-9._]+\.[a-zA-Z]{2,})$/, message: 'Invalid email address' } })} />
-                {errors.email && <span className='text-sm text-red-500'>{errors.email.message}</span>}
-              </div>
-              <div className='md:flex-col grid  justify-between md:p-0 p-2'>
-                <label htmlFor="" className='mr-3'>Phone number  </label>
-                <input type="phone" placeholder='Enter mobile number' className="md:w-[550px] mx-10 "
-                  {...register("phone", { required: 'Phone number is required !', maxLength: { value: 10, message: "Number must be of 10 digits" } })} />
-                {errors.phone && <span className='text-sm text-red-500'>{errors.phone.message}</span>}
-              </div>
-              <div>
-                <textarea className='md:w-[550px] md:ml-12 w-[360px]  mt-4' name="" id="" placeholder='Write your Comments'></textarea>
-              </div>
-              <button type="submit" disabled={ordered} className='font-bold md:ml-24 bg-black md:text-center items-center hover:bg-blue-500'>{ordered ? 'Ordered ✔' : 'Order Now'}</button>
-            </div>
-          </form>
           </div>
         </div>
-      )}
-     
+      </form>
+    </div>
+  </div>
+)}
+
       
     </>
   )

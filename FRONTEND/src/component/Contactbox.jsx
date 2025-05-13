@@ -41,87 +41,124 @@ const Contactbox = () => {
   return (
     
     <>
-    <div className="relative md:w-full w-[725px] h-[600px] bg-blue-300">
-    
-    <div className="absolute inset-0">
-      
-      <img
-        src="https://images.unsplash.com/photo-1530520960548-0d70a1ad430d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Background"
-        className="w-full h-full object-cover filter blur-sm -z-0"
-      />
-      <div className="absolute inset-0 bg-opacity-30"></div> 
-    </div>
-    <div className="relative  flex flex-col items-center justify-center h-full">
-      <h1 className="text-white text-4xl md:text-6xl font-bold text-center drop-shadow-lg" data-aos="fade-down-right">
-      Contact Us
-      </h1>
-      <h1 className='text-2xl text-white' data-aos="fade-down-left">Welcome to The GenZ Assignments pvt. ltd</h1>
-    </div>
+  <div className="relative w-full h-[600px] bg-blue-300 overflow-hidden">
+  {/* Blurred Background Image */}
+  <div className="absolute inset-0 z-0">
+    <img
+      src="https://images.unsplash.com/photo-1530520960548-0d70a1ad430d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Background"
+      className="w-full h-full object-cover filter blur-sm"
+    />
+    <div className="absolute inset-0 bg-opacity-30"></div>
   </div>
 
+  {/* Foreground Content */}
+  <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+    <h1
+      className="text-white text-4xl md:text-6xl font-bold drop-shadow-lg mb-4"
+      data-aos="fade-down-right"
+    >
+      Contact Us
+    </h1>
+    <h2
+      className="text-2xl md:text-3xl text-white drop-shadow"
+      data-aos="fade-down-left"
+    >
+      Welcome to The GenZ Assignments Pvt. Ltd.
+    </h2>
+  </div>
+</div>
 
 
 
 
-
-
-
-
-
-
-
-
-      <div className='formadd md:flex md:flex-row flex-col  md:p-8 text-black  bg-base-100'  >
-      
-
-    <div className=' md:w-1/2  w-[725px] '>
-      <div className="form-section  rounded-xl m-3 bg-white/70" >
-        
-        <form  className="row g-4 " onSubmit={handleSubmit(onSubmit)} method='post' >
-      
-          <div className="mb-3 flex justify-between ">
-            <label htmlFor="name" className="form-label">Name</label>
-            <input type="text" className="form-control w-[500px] "  placeholder="Enter your name" {...register("fullname", { required: true })}/>
-          </div>
-      
-          <div className="mb-3 flex justify-between">
-            <label htmlFor="email" className="form-label">Email</label>
-            <input type="email" className="form-control w-[500px]" id="email" placeholder="Enter your email"
-            {...register("email", { required: true })}/>
-          </div>
-      
-          <div className="mb-3 flex justify-between">
-            <label htmlFor="phone" className="form-label">Phone Number</label>
-            <input type="tel" className="form-control w-[500px]" id="phone" placeholder="Enter your Number" 
-            {...register("phone", { required: true })}/>
-          </div>
-      
-          <div className="mb-3 flex justify-between">
-            <label htmlFor="title" className="form-label">Title</label>
-            <input type="text" className="form-control w-[500px]" id="title" placeholder="Assignment title"
-            {...register("title", { required: true })}/>
-          </div>
-          <div className="text-center mt-4">
-            <button type="submit" disabled={sended} className="btn btn-primary bg-blue-500">{sended ? 'Thank You' : 'SEND'}</button>
-          </div>
-        </form>
-      </div>
+<div className="formadd md:flex md:flex-row flex-col bg-base-100 text-black md:p-8 p-4">
+  {/* Form Section */}
+  <div className="md:w-1/2 w-full">
+  <div className="form-section rounded-xl m-3 bg-white/70 p-6 shadow-md  flex flex-col justify-between h-[520px]">
+    <form className="space-y-4 " onSubmit={handleSubmit(onSubmit)} method="post">
+      {/* Name */}
+      <div className="flex flex-col gap-1">
+        <label htmlFor="fullname" className="font-semibold">Name</label>
+        <input
+          id="fullname"
+          name="fullname"
+          type="text"
+          className="p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+          placeholder="Enter your name"
+          {...register("fullname", { required: true })}
+        />
       </div>
 
-
-      <div className=' banner8  rounded-xl m-3 md:w-1/2 w-[725px] md:flex flex-col justify-center items-center text-2xl bg-white  text-white font-bold  shadow-lg shadow-black p-10 md:p-0  md:h-[480px]' data-aos="zoom-in">
-            
-                  <div className='backdrop-blur-md bg-black/10 shadow-2xl md:flex  justify-center items-center m-5 gap-5 text-center border-2 border-white md:h-[300px] md:w-[600px] '>
-                 
-                  <div className=' '>
-                  <h1 className='text-3xl'>✉  Email</h1>
-                  <p>  assignments@genzassignments.com</p>
-                  <p>invoice.genz@gmail.com</p>
-                  </div>
-       </div>
-        </div>
+      {/* Email */}
+      <div className="flex flex-col gap-1">
+        <label htmlFor="email" className="font-semibold">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          className="p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+          placeholder="Enter your email"
+          {...register("email", { required: true })}
+        />
       </div>
+
+      {/* Phone */}
+      <div className="flex flex-col gap-1">
+        <label htmlFor="phone" className="font-semibold">Phone Number</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          className="p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+          placeholder="Enter your number"
+          {...register("phone", { required: true })}
+        />
+      </div>
+
+      {/* Title */}
+      <div className="flex flex-col gap-1">
+        <label htmlFor="title" className="font-semibold">Title</label>
+        <input
+          id="title"
+          name="title"
+          type="text"
+          className="p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
+          placeholder="Assignment title"
+          {...register("title", { required: true })}
+        />
+      </div>
+
+      {/* Submit Button */}
+      <div className="text-center ">
+        <button
+          type="submit"
+          disabled={sended}
+          className={`px-6 py-2 rounded shadow font-semibold text-white transition duration-300 ${
+            sended ? 'bg-green-500 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-600'
+          }`}
+        >
+          {sended ? 'Thank You' : 'SEND'}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+  {/* Contact Banner */}
+  <div
+    className="banner8 rounded-xl m-3 md:w-1/2 w-full flex flex-col justify-center items-center text-white font-bold shadow-lg p-6 md:p-0"
+    data-aos="zoom-in"
+  >
+    <div className="backdrop-blur-md bg-black/10 border-2 border-white text-center p-8 shadow-2xl rounded-lg md:w-[600px]">
+      <h1 className="text-3xl mb-3">✉ Email</h1>
+      <p className="text-lg">assignments@genzassignments.com</p>
+      <p className="text-lg">invoice.genz@gmail.com</p>
+    </div>
+  </div>
+</div>
+
       {/* map */}
       <div className='bg-base-100'>
       <div className="relative text-right md:w-[900px] w-[725px] h-[450px] m-auto p-2 ">

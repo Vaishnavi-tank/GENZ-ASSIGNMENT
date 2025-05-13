@@ -20,7 +20,7 @@ const Resultsection = () => {
   return (
     <> 
     
-      <div className='banner5 md:w-full w-[725px]'>
+      {/* <div className='banner5 md:w-full w-[425px]'>
         <h1 className='text-4xl text-center p-5 text-yellow-800 font-bold'>What GenZ Happy Clients Say</h1>
         <div className='  text-white md:w-[700px] md:text-right m-auto  md:ml-[400px] md:mt-[100px] backdrop-blur-md'>
           <Slider {...settings}>
@@ -43,7 +43,54 @@ const Resultsection = () => {
           </Slider>
         </div>
       </div>
-     
+      */}
+     <div className="banner5 w-full max-w-[750px] mx-auto px-4 py-10">
+  <h1 className="text-3xl md:text-4xl text-center text-yellow-800 font-bold mb-8">
+    What GenZ Happy Clients Say
+  </h1>
+
+  <div className="backdrop-blur-md bg-white/10 rounded-xl p-4">
+    <Slider
+      dots={true}
+      infinite={true}
+      speed={500}
+      slidesToShow={1}
+      slidesToScroll={1}
+      autoplay={true}
+      autoplaySpeed={4000}
+      arrows={false}
+    >
+      {/* Slide 1 */}
+      <div className="text-black text-center px-4 py-6 font-bold">
+        <p className="text-xl md:text-xl leading-relaxed mb-4 italic">
+          ❝ Got to know them through my colleague, and I’m really thankful to him for suggesting this platform. The support team helps you out even with small queries. It’s the highlight of the company. ❞
+        </p>
+        <h2 className="font-semibold text-2xl">Mary Barnett - Australia</h2>
+        <p className="text-yellow-400">⭐⭐⭐⭐⭐</p>
+      </div>
+
+      {/* Slide 2 */}
+      <div className="text-black text-center px-4 py-6 font-bold">
+        <p className="text-xl md:text-xl leading-relaxed mb-4 italic">
+          ❝ The job was done using the latest technologies. I received my work within the given time period, and it was up to the mark. ❞
+        </p>
+        <h2 className="font-semibold text-2xl">Mukesh Swami - India</h2>
+        <p className="text-yellow-400">⭐⭐⭐⭐⭐</p>
+      </div>
+ 
+      {/* Slide 3 */}
+      <div className="text-black text-center px-4 py-6 font-bold">
+        <p className="text-xl  md:text-xl leading-relaxed mb-4 italic">
+          ❝ Loved the services and accuracy of the work with zero delays. Everything was delivered on time and according to my requirements. ❞
+        </p>
+        <h2 className="font-semibold text-2xl">Andrea Henry - UK</h2>
+        <p className="text-yellow-400">⭐⭐⭐⭐⭐</p>
+      </div>
+    </Slider>
+  </div>
+</div>
+
+
       
     </>
   )

@@ -34,7 +34,7 @@ const Main = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 3000);
+    }, 20000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -337,7 +337,7 @@ const Main = () => {
       </div>
 
       <div className="finan bg-no-repeat bg-cover h-[200px]  md:h-[250px] md:w-full sm:w-[300px] md:p-4 p-2 flex items-center justify-center text-center">
-        <h1 className='text-xl md:text-2xl text-white '>
+        <h1 className='text-xl md:text-3xl text-white '>
           Finance, <br />
           Accounting, <br />
           Economics<br />
@@ -346,7 +346,7 @@ const Main = () => {
       </div>
 
       <div className="chem bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
-        <h1 className='text-xl md:text-2xl text-white'>
+        <h1 className='text-xl md:text-3xl text-white'>
           Biology+<br />
           Chemistry+<br />
           Physics
@@ -354,27 +354,27 @@ const Main = () => {
       </div>
 
       <div className="tech bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
-        <h1 className='text-xl md:text-2xl text-white'>Technology</h1>
+        <h1 className='text-xl md:text-3xl text-white'>Technology</h1>
       </div>
 
       <div className="law bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
-        <h1 className='text-xl md:text-2xl text-white'>Law</h1>
+        <h1 className='text-xl md:text-3xl text-white'>Law</h1>
       </div>
 
       <div className="bM bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
-        <h1 className='text-xl md:text-2xl text-white'>Business and Management</h1>
+        <h1 className='text-xl md:text-3xl text-white md:text-right'>Business <br /> Management</h1>
       </div>
 
       <div className="hN bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
-        <h1 className='text-xl md:text-2xl text-white'>Health & Nursing</h1>
+        <h1 className='text-xl md:text-3xl text-black'>Health & Nursing</h1>
       </div>
 
       <div className="cN bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
-        <h1 className='text-xl md:text-2xl text-white'>Cybersecurity & Networking</h1>
+        <h1 className='text-xl md:text-3xl text-white'>Cybersecurity & Networking</h1>
       </div>
 
       <div className="dA bg-no-repeat bg-cover h-[200px]  md:h-[250px] w-full sm:w-[300px] p-4 flex items-center justify-center text-center">
-        <h1 className='text-xl md:text-2xl text-white'>Data & Analytics</h1>
+        <h1 className='text-xl md:text-3xl text-white'>Data & Analytics</h1>
       </div>
     </Slider>
   </div>

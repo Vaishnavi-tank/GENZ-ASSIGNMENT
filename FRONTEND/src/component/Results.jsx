@@ -15,7 +15,7 @@ const Results = () => {
         useEffect(() => {
           const timer = setTimeout(() => {
             setIsOpen(true);
-          }, 3000);
+          }, 20000);
       
           return () => clearTimeout(timer);
         }, []);

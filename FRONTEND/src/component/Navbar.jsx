@@ -41,13 +41,13 @@ const Navbar = () => {
       <img
         src="/logo1.png"
         alt="Logo"
-        className="h-12 w-auto ml-2 sm:h-14 md:h-16 lg:h-20 object-contain"
+        className="h-12 w-auto ml-2 sm:h-14 md:h-16 lg:h-16 object-contain"
       />
     </div>
 
     {/* Desktop Menu */}
     <div className="hidden lg:flex">
-      <ul className="menu menu-horizontal px-1 space-x-6 text-lg font-semibold">
+      <ul className="menu menu-horizontal px-1 space-x-6 text-xl font-semibold">
         {navItems}
       </ul>
     </div>
